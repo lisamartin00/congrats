@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Congratulations!</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      background: url('./img/starryNight.gif');
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    .congrats {
+      width: 600px;
+    }
+    .scroll-left {
+      height: 50px; 
+      overflow: hidden;
+      position: relative;
+    }
+    .scroll-left p {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      /* Starting position */
+      -moz-transform:translateX(100%);
+      -webkit-transform:translateX(100%); 
+      transform:translateX(100%);
+      /* Apply animation to this element */ 
+      -moz-animation: scroll-left 10s linear infinite;
+      -webkit-animation: scroll-left 10s linear infinite;
+      animation: scroll-left 10s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-left {
+      0% { -moz-transform: translateX(100%); }
+      100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes scroll-left {
+      0% { -webkit-transform: translateX(100%); }
+      100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes scroll-left {
+      0% { 
+        -moz-transform: translateX(100%); /* Browser bug fix */
+        -webkit-transform: translateX(100%); /* Browser bug fix */
+        transform: translateX(100%); 
+      }
+      100% { 
+        -moz-transform: translateX(-100%); /* Browser bug fix */
+        -webkit-transform: translateX(-100%); /* Browser bug fix */
+        transform: translateX(-100%); 
+      }
+    }
+    .visitor {
+      margin-top: 20px;
+      width: 200px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      background-color: greenyellow;
+      color: blue;
+      width: 350px;
+      margin: 40px auto;
+    }
+    table {
+      margin: 0 auto;
+      width: 900px;
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/congrats.png" class="congrats" />
+  <div>
+    <div class="scroll-left">
+      <p>
+        You did it! Your big day is finally here!
+      </p>
+    </div>
+  </div>
+  <h2>Time to Celebrate!</h2>
+  <table border="10" cellpadding="10">
+    <tr>
+      <td><iframe src="https://giphy.com/embed/ph0V6sbg4pgY0" width="300" height="226" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+      <td><iframe src="https://giphy.com/embed/pWT1KREi3UaFW" width="300" height="230" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+      <td><iframe src="https://giphy.com/embed/wqPWKOtW2AD9S" width="300" height="262" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+    </tr>
+    <tr>
+      <td><iframe src="https://giphy.com/embed/pa37AAGzKXoek" width="300" height="226" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+      <td><iframe src="https://giphy.com/embed/1yS6gucxEiP9S" width="300" height="199" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+      <td><iframe src="https://giphy.com/embed/XeIiPXfUljpzG" width="300" height="225" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+    </tr>
+    <tr>
+      <td><iframe src="https://giphy.com/embed/ldd7MQaKRVWwg" width="300" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+      <td><iframe src="https://giphy.com/embed/DH9skMDA3Vf0s" width="300" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+      <td><iframe src="https://giphy.com/embed/3ohzdIvnUKKjiAZTSU" width="300" height="224" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></td>
+    </tr>
+  </table>
+  <img src="./img/underConstruction.gif" />
+  <br />
+  <img src="./img/hr.gif" />
+  <br />
+  <img src="./img/visitor.gif" class="visitor" />
+</body>
+</html>
